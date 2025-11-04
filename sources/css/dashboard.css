@@ -1,0 +1,65 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Style the header */
+header {
+  background-color: #333;
+  padding: 20px;
+  text-align: center;
+  color: white;
+  margin-bottom: 20px;
+}
+
+/* Create three columns/boxes that float next to each other */
+nav {
+  float: left;
+  width: 25%;
+  background: #ccc;
+  padding: 20px;
+  height: 300px; /* only for demonstration, should be removed */
+  border-right: 1px solid #555; /* Add border on the right side */
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav a {
+  display: block;
+  color: black;
+  padding: 8px 16px;
+  text-decoration: none;
+  border-bottom: 1px solid #555;
+}
+
+nav a:hover {
+  background-color: #555;
+  color: white;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 50%;
+  background-color: #f1f1f1;
+  height: 300px; /* only for demonstration, should be removed */
+  border-right: 1px solid #555; /* Add border on the right side */
+}
+
+/* Style the footer */
+footer {
+  background-color: #333;
+  padding: 10px;
+  text-align: center;
+  color: white;
+  clear: both;
+}

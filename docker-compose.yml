@@ -1,0 +1,30 @@
+version: '3.8'
+
+services:
+  php-apache-environment:
+    container_name: php-apache
+    build:
+      context: .
+      dockerfile: Dockerfile
+    depends_on:
+      - mysqldb
+    volumes:
+      - ./sources:/var/www/html/
+    ports:
+      - "8080:80"
+
+  mysqldb:
+    container_name: db
+    image: mysql:8.0
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: "finalweb123"
+      MYSQL_DATABASE: "final"
+      MYSQL_USER: "hoaan"
+      MYSQL_PASSWORD: "finalweb123"
+    ports:
+      - "3306:3306"
+    volumes:
+      - ./sources/config/final.sql:/docker-entrypoint-initdb.d/dump.sql
+volumes:
+  session-data:

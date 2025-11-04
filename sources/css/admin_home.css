@@ -1,0 +1,214 @@
+.wrapper .row {
+    display: flex; /* Sử dụng flexbox để căn chỉnh các cột */
+    flex-wrap: wrap; /* Cho phép các cột xuống dòng khi không đủ không gian */
+    margin: 0 -15px; /* Tạo lề âm bên trái và bên phải */
+    align-items: center;
+    justify-content: center;
+}
+[class*="col-"] {
+    width: 100%;
+    height: auto;
+  }
+@media only screen and (min-width: 768px) {
+    /* For desktop: */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+}
+.module_item {
+    text-align: center; /* Căn giữa nội dung */
+    margin: 5px; /* Khoảng cách giữa các module */
+    width: 100px;   
+}
+#home_module_list{
+    background-color:#f8f9fa;
+    margin: 20px;
+    padding: 30px;
+    border-radius: 20px;
+}
+.module_item a:first-child {
+    display: block; /* Đảm bảo ảnh là một block element */
+    margin: 0 auto; /* Căn ảnh giữa module */
+}
+
+.module_item a:last-child {
+    display: block; /* Đảm bảo chữ là một block element */
+    margin-top: 5px; /* Khoảng cách giữa ảnh và chữ */
+}
+
+.wrapper {
+    display: flex; /* Sử dụng flexbox để căn chỉnh */
+    flex-direction: column; /* Sắp xếp các phần tử theo chiều dọc */
+    justify-content: center; /* Căn giữa dọc */
+    align-items: center; /* Căn giữa ngang */
+    height: 100vh; /* Chiều cao của wrapper sẽ chiếm toàn bộ chiều cao của màn hình */
+}
+.footer{
+    /* Thiết lập một số thuộc tính CSS cho footer */
+    background-color: #f8f9fa; /* Màu nền */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Hiệu ứng bóng đổ */
+    padding: 20px; /* Khoảng cách giữa nội dung và viền */
+    margin: 0; /* Khoảng cách giữa footer và phần nội dung khác */
+    display: flex; /* Sử dụng flexbox để căn chỉnh các phần tử con */
+    align-items: center; /* Căn giữa theo chiều dọc */
+    text-align: center;
+    justify-content: center; /* Căn giữa theo chiều ngang */
+}
+.header {
+    /* Thiết lập một số thuộc tính CSS cho footer */
+    background-color: #6c757d; /* Màu nền */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Hiệu ứng bóng đổ */
+    padding: 20px; /* Khoảng cách giữa nội dung và viền */
+    margin: 0; /* Khoảng cách giữa footer và phần nội dung khác */
+}
+.header .hd1{
+    text-align: center; /* Căn giữa nội dung */
+    font-family:'Trebuchet MS';/*, 'Arial Narrow', Arial, sans-serif*/
+    /* font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
+}
+.header .hd2{
+    text-align: right;
+    font-size: 130%;
+    color: white;
+    padding-right: 10px;
+    
+}
+.footer span {
+    /* Thiết lập các thuộc tính CSS cho văn bản */
+    text-align: center;
+}
+strong,.wrapper a{
+    color: #6c757d;
+}
+.header h2{
+    font-size: 200%;
+    color: white;
+    padding-left: 0px;
+    font-family: Cooper Black;
+}
+.hd2 a{
+    font-family: 'Corbel';
+    color: white;
+    text-decoration: none;
+
+}
+.hd{
+    background-color: rgba(13, 36, 53, 0.872);
+    text-align: center;
+    
+}
+.hd h4{
+    padding: 10px;
+    color: white;
+    font-family: sans-serif;
+    vertical-align: bottom;
+    margin: 0px;
+}
+.hd1, .hd2{
+    background-color: rgba(0, 0, 0, 0.664);
+}
+.hd1 h2{
+    margin: auto;
+    padding: 20px;
+}
+.hd1{
+    padding-top: 15px;
+}
+.hd2{
+    padding-bottom: 10px;
+}
+.header{
+    padding: 0px;
+}
+body{
+    margin: auto;
+}
+#home_module_list{
+    min-height: 100px;
+}
+.t1{
+    font-family: sans-serif;
+    text-align: center;
+    color: rgba(13, 36, 53, 0.872);
+}
+
+/* Style for top navigation */
+.topnav {
+    background-color: #f8f9fa;
+    overflow: hidden;
+}
+
+.topnav a {
+    float: left;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 15px;
+    font-family: sans-serif;
+}
+
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+/* Style for menu list */
+.menu_list {
+    display: none;
+    background-color: #f8f9fa;
+    overflow: hidden;
+    list-style-type: none;
+}
+
+.menu_list li {
+    float: none;
+}
+
+.menu_list li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.menu_list li a:hover {
+    background-color: #ddd;
+    color: black;
+}
+@media screen and (max-width: 768px) {
+    #myTopnav1{
+        display: block;
+    }
+    #myTopnav{
+        display: none;
+    }
+}
+@media screen and (min-width: 768px) {
+    #myTopnav1{
+        display: none;
+    }
+    .menu_list {
+        display: none;
+    }
+}
+ul{
+    margin: auto;
+}
+#myTopnav1 a{
+    padding: 10px;
+}
+#myTopnav1 svg{
+    width: 20px;
+}
+
+

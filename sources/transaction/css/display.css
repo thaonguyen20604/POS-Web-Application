@@ -1,0 +1,11 @@
+.disabled{
+    cursor: not-allowed;
+    background-color: gray;
+    color: white;
+}
+
+.enabled{
+    cursor: pointer;
+    background-color: #00bb06;
+    color: white;
+}

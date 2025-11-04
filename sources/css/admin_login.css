@@ -1,0 +1,122 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+#username,#password{
+    width: 97%;
+    height: 45px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    margin-top: 5px;
+    padding-left: 10px;
+    font-size: larger;
+}
+label{
+    color: gray;
+    font-family: sans-serif;
+    font-size: larger;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    background-color: #dee2e6;
+}
+main{
+    display: flex;
+    justify-content: space-around; 
+    align-items: center;
+    flex-grow: 1;
+}
+.container {
+    border-radius: 30px;
+    background-color: white;
+    padding-left: 20%;
+    display: flex; /* Sử dụng Flexbox */
+    flex-direction: column; /* Đặt hướng của flexbox thành dọc */
+    flex-wrap: wrap; /* Cho phép các phần tử trong container xuống dòng khi không đủ không gian */
+    justify-content: center; /* Căn các phần tử theo chiều dọc */
+    align-items: center; /* Căn các phần tử theo chiều ngang */
+    width: 70%;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    margin: 1rem; /* Tạo lề ngoài */
+    padding: 1.5rem; /* Tạo lề bên trong */
+    padding: 0; /* Xóa lề bên trong ở màn hình lớn */
+    flex-direction: row; /* Đặt hướng của flexbox thành ngang ở màn hình lớn */
+}
+.logo{
+    display: flex; /* Sử dụng Flexbox */
+    flex-direction: column; /* Đặt hướng của flexbox thành dọc */
+    justify-content: center; /* Căn giữa các phần tử theo chiều dọc */
+    align-items: center; /* Căn giữa các phần tử theo chiều ngang */
+    border-right: 1px solid #dee2e6; /* Tạo đường viền bên phải */
+    padding-right: 1rem; /* Tạo lề bên phải */
+    padding-bottom: 0.75rem; /* Tạo lề phía dưới */
+    padding-left: 1rem; /* Tạo lề bên trái */
+    padding-top: 1rem; /* Tạo lề phía trên */
+}
+.login{
+    display: flex; /* Sử dụng Flexbox */
+    flex-direction: column; /* Đặt hướng của flexbox thành dọc */
+    justify-content: center; /* Căn giữa các phần tử theo chiều dọc */
+    align-items: center; /* Căn giữa các phần tử theo chiều ngang */
+    padding: 1rem; /* Tạo lề cho phần tử */
+}
+svg{
+    width: 30vh;
+    height: auto;
+}
+h2{
+    text-align: center;
+    color: #6b7682;
+}
+p{
+    color: #6b7682;
+    text-align: center;
+}
+a{
+    text-decoration: none;
+}
+#butt{
+    background-color: #6b7682;
+    border: none;
+    border-radius: 5px;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    padding-left: 12px;
+    padding-right: 12px;
+    color: white;
+    width: 100%;
+    font-size: larger;
+}
+.footer {
+    /* Thiết lập một số thuộc tính CSS cho footer */
+    background-color: #f8f9fa; /* Màu nền */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Hiệu ứng bóng đổ */
+    padding: 20px; /* Khoảng cách giữa nội dung và viền */
+    margin: 0; /* Khoảng cách giữa footer và phần nội dung khác */
+    display: flex; /* Sử dụng flexbox để căn chỉnh các phần tử con */
+    align-items: center; /* Căn giữa theo chiều dọc */
+    text-align: center;
+    justify-content: center; /* Căn giữa theo chiều ngang */
+}
+.footer span {
+    /* Thiết lập các thuộc tính CSS cho văn bản */
+    color: #6c757d; /* Màu văn bản */
+    text-align: center;
+}
+
+.footer svg {
+    width: 20px; /* Đặt kích thước của SVG */
+    height: 20px;
+    margin-left: 5px;
+    margin-right: 5px; /* Khoảng cách giữa SVG và span */
+}
+.alert{
+    color: red;
+    padding-top: 8px;
+    padding-bottom: 15px;
+    padding-left: 2px;
+    font-family: Calibri;
+}

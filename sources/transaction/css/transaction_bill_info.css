@@ -1,0 +1,82 @@
+#bill-info{
+    /* fit width */
+    width: 45%;
+    float: left;
+
+    /* spacing */
+    margin: 20px;
+    padding: 10px;
+
+    /* border */
+    border: 1px solid gray;
+    border-radius: 5px;
+    box-shadow: 0 0 10px lightgray;
+}
+
+#bill-info-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#bill-info-table th {
+    background-color: #f2f2f2;
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+#bill-info-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+#bill-info-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+#search-result-table tr:hover {
+    background-color: #f2f2f2;
+}
+
+#delete-button{
+    /* border */
+    border-radius: 5px;
+    border: 1px solid gray;
+
+    /* color */
+    background-color: red;
+    color: white;
+
+    /* cursor hover */
+    cursor: pointer;
+
+    /* spacing */
+    line-height: 0;
+    padding: 5px;
+}
+#delete-button:hover{
+    background-color: darkred;
+}
+
+#header-bill-table{
+    border-collapse: collapse;
+    width: 100%;
+}   
+
+#header-bill-table td{
+    border: none;
+    padding: 10px;
+    margin: 10px
+}   
+
+#bill-info-title{
+    text-align: left;
+    font-size: 20px;
+    font-weight: bold;
+
+    padding: 10px;
+    margin: 0px;
+}
+
+

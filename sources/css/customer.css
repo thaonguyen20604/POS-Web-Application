@@ -1,0 +1,14 @@
+.container {
+    width: 50%;
+    margin: 50px auto;
+    text-align: center;
+  }
+  
+  input[type="text"], button {
+    margin: 10px 0;
+  }
+  
+  #customerInfo, #newCustomerForm {
+    margin-top: 20px;
+  }
+  

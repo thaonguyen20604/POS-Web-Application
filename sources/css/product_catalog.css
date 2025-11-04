@@ -1,0 +1,245 @@
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+th {
+    background-color: #f2f2f2;
+}
+img {
+    max-width: 100px;
+    height: auto;
+}
+.search_and_button {
+    display: flex; /* Sử dụng flexbox */
+    justify-content: space-between; /* Căn các phần tử con cách nhau bằng khoảng trống */
+    align-items: center; /* Căn giữa theo chiều dọc */
+}
+.search_container {
+    margin: 0px;
+    width: fit-content;
+    margin-left: 10px;
+}
+#but {
+    padding: 8px;
+    background-color: rgb(19, 135, 230);
+    border: none;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    border-radius: 5px;
+    color: white;
+}
+#but:hover{
+    background-color: rgb(18, 123, 209);
+}
+@media screen and (max-width: 600px) {
+    .search_and_button {
+      flex-direction: column; /* Đặt chiều sắp xếp của các phần tử thành cột */
+      align-items: flex-start; /* Căn các phần tử con theo chiều dọc */
+    }
+  
+    #but {
+      margin-top: 10px; /* Khoảng cách giữa nút New Product và khung tìm kiếm */
+      margin-left: 10px;
+    }
+    #search {
+        margin-top: 10px; /* Khoảng cách giữa nút New Product và khung tìm kiếm */
+      }
+}
+#frame_search{
+    height: 5vh;
+    border-radius: 10px;
+    width: 35vw;
+    padding-left: 8px;
+    border: 1px solid gray;
+}
+
+#search{
+    height: 25px;
+    border-radius: 5px;
+    border: 1px solid gray;
+}
+.dialog, .update_dialog, .delete_dialog {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 5000;
+}
+/* .update_dialog{
+    overflow-y: auto;
+    max-height: 500px;
+} */
+.dialog_content, .update_dialog_content, .delete_dialog_content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 80px;
+    padding-right: 80px;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    background-color: rgb(222, 227, 231);
+}
+
+#addButton, #updateButton, #cancelButton, #cancelButton2, #deleteButton {
+    display: block;
+    margin-top: 10px;
+    float: right;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(60, 70, 78);
+    color: white;
+}
+#deleteButton{
+    float: left;
+}
+label,h3{
+    color: rgb(60, 70, 78);
+    font-family: Calibri;
+}
+h3{
+    text-align: center;
+    font-size: 25px;
+    margin: 10px;
+}
+#showId {
+    margin-bottom: 8px;
+    margin-top: 5px;
+    width: 300px;
+    height: 30px;
+    border-radius: 8px;
+    border: 1px solid grey;
+    padding-left: 5px;
+    padding-right: 5px;
+    display: flex; /* Sử dụng flex để căn giữa */
+    align-items: center; /* Căn giữa theo chiều dọc */
+    background-color: white; /* Thêm màu nền để nhìn rõ hơn */
+}
+#barcode, #name, #import_price, #retail_price, #category, #date, #description, #quantity,
+#upbarcode, #upname, #upimport_price, #upretail_price, #upcategory, #undate, #updescription, #upquantity
+{
+    margin-bottom: 8px;
+    margin-top: 5px;
+    width: 300px;
+    height: 30px;
+    border-radius: 8px;
+    border: 1px solid grey;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.hd2{
+    padding-right: 10px;
+}  
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%; /* Đảm bảo footer chiếm toàn bộ chiều rộng của trang */
+    background-color: #f1f1f1;
+    text-align: center;
+    padding: 10px;
+}
+#cancelButton, #cancelButton1{
+    margin-left: 10px;
+}
+#cancelButton1 {
+    display: block;
+    margin-top: 10px;
+    float: right;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(60, 70, 78);
+    color: white;
+}
+#female{
+    margin-bottom: 10px;
+}
+.row {
+    width: 100%;
+    min-width: 820px;
+}
+.row table {
+    table-layout: fixed;
+    width: 100%;
+}
+.row table.head {
+    width: calc(100% - 15px);
+}
+.row table.head tr td {
+    background: #eee;
+    color: black;
+    font-weight: bolder;
+    font-family: Calibri;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-top: 1px solid #b8b6b6;
+    border-bottom: 1px solid #b8b6b6;
+}
+
+table tr td {
+    border: 1px solid #eee;
+    padding: 5px;
+    word-wrap: break-word;
+}
+.scroll_table {
+    overflow-y: auto;
+    max-height: 200px;
+}
+#myTopnav1, .header, .Catalog{
+    min-width: 900px;
+}
+
+/* .notification-container {
+    position: relative;
+} */
+
+.notification {
+    position: relative;
+}
+
+.error-notification {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #d22222;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    z-index: 1001;
+    transition: opacity 0.5s ease;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Độ mờ của overlay */
+    z-index: 999; /* Đảm bảo overlay nằm trên tất cả các phần tử khác */
+    display: none; /* Ẩn ban đầu */
+}
+
+
+
+

@@ -1,0 +1,34 @@
+.float-message {
+    position: fixed;
+    top: 10%;
+    left: 20px;
+    padding: 20px;
+    border-radius: 5px;
+    display:none;
+
+    transition: opacity 0.5s ease;
+}
+.error-container {
+    background-color: #ffcccc;
+}
+.success-container {
+    background-color: #ccffcc;
+}
+.error-title {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.success-title {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.error-message {
+    color: darkred;
+}
+.sucess-title {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.sucess-message {
+    color: darkgreen;
+}

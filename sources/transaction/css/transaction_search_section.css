@@ -1,0 +1,150 @@
+.transaction-search-section{
+    /* fit width */
+    width: 100%;
+
+    display: flex;
+    flex-wrap: wrap;
+
+    /* spacing */
+    margin: 20px;
+    padding: 10px;
+
+    /* border */
+    border: 1px solid gray;
+    border-radius: 5px;
+    box-shadow: 0 0 10px lightgray;
+}
+
+.transaction-search-section select {
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid gray;
+}
+
+.transaction-search-section input {
+    margin: 5px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid gray;
+}
+
+.margin-3 {
+    margin: 10px;
+}
+
+.send-button {
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid gray;
+    background-color: snow;
+    cursor: pointer;
+}
+.send-button:hover {
+    background-color: lightgray;
+}
+
+#search-box{
+    display: flex;
+}
+
+#customer-search-box{
+    display: flex;
+}
+
+#customer-type{
+    display: flex;
+}
+
+#customer-info{
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 5px;
+    background-color: lightgray;
+}
+
+#adding-method{
+    margin: 5px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid gray;
+}
+
+.search-button{
+    border-radius: 5px;
+    border: 1px solid gray;
+    cursor: pointer;
+
+    margin: 5px;
+
+    height: 30px;
+    width: 30px;
+
+    background-color: lightgreen;
+}
+
+.search-button:hover{
+    background-color: green;
+    color: white;
+}
+
+#customer-add-button{
+    border-radius: 5px;
+    border: 1px solid gray;
+    cursor: pointer;
+
+    margin: 5px;
+
+    height: 30px;
+    width: 30px;
+
+    background-color: skyblue;
+    color: white;
+
+    font-weight: bold;
+    font-size: large;
+}
+
+#customer-add-button:hover{
+    background-color: blue;
+}
+
+.add-button{
+    border-radius: 5px;
+    border: 1px solid gray;
+    cursor: pointer;
+
+    margin: 5px;
+
+    height: 30px;
+    width: 30px;
+
+    background-color: #00f208;
+    color: white;
+
+    font-weight: bold;
+    font-size: large;
+}
+
+.add-button:hover{
+    background-color: green;
+}
+
+#transaction-bill-table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#transaction-bill-table td{
+    border: 1px solid gray;
+    padding: 5px;
+    text-align: center;
+}
+
+#info-table{
+    width: 100%;
+}   
+#info-table td{
+    border: 1px solid black;
+    width: 33.33%;
+}

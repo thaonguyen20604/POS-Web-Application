@@ -1,0 +1,99 @@
+a{
+    text-decoration: none;
+}
+.purchase{
+    color: black;
+}
+.search-and-button{
+    height: 12vh;
+}
+h2{
+    text-align: center;
+    font-family: Calibri;
+    color: rgb(60, 70, 78);
+}
+#phoneNumber, #address{
+    margin-bottom: 8px;
+    margin-top: 5px;
+    width: 300px;
+    height: 30px;
+    border-radius: 8px;
+    border: 1px solid grey;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+#cancelButton{
+    margin-left: 10px;
+}
+#saveButton{
+    display: block;
+    margin-top: 10px;
+    float: right;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(60, 70, 78);
+    color: white;
+}
+.row {
+    width: 100%;
+}
+.row table {
+    table-layout: fixed;
+    width: 100%;
+}
+.row table.head {
+    width: calc(100% - 15px);
+}
+.row table.head tr td {
+    background: #eee;
+    color: black;
+    font-weight: bolder;
+    font-family: Calibri;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-top: 1px solid #b8b6b6;
+    border-bottom: 1px solid #b8b6b6;
+}
+
+table tr td {
+    border: 1px solid #eee;
+    padding: 5px;
+    word-wrap: break-word;
+}
+.scroll_table {
+    height: 300px;
+    overflow-y: auto;
+}
+.scroll_table1 {
+    height: 250px;
+    overflow-y: auto;
+}
+.row table.head tr td {
+    background: #eee;
+    color: black;
+    font-weight: bolder;
+    font-family: Calibri;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-top: 1px solid #b8b6b6;
+    border-bottom: 1px solid #b8b6b6;
+}
+.total h4{
+    text-align: left;
+    padding-left: 5px;
+}
+.hp{
+    text-align: center;
+}
+.header, .Catalog, #myTopnav1{
+    min-width: 900px;
+}
+#frame_search{
+    margin-top: 18px;
+    margin-left: 8px;
+}
+
